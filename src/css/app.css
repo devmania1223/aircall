@@ -7,19 +7,33 @@
   top: 0;
   right: 0;
   bottom: 0;
+  font-family: "Roboto", sans-serif;
 }
 
 #app .container {
   width: 376px;
   height: 666px;
   z-index: 100;
-
-  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgb(250, 250, 250);
   border-radius: 3px;
-  box-shadow: 0 0 5px 0 rgba(0, 0, 0, .9);
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.9);
+  overflow-x: hidden;
 }
 
 #app .container-view {
+  height: 100%;
   padding: 20px;
+  background-color: rgb(250, 250, 250);
+  overflow-x: hidden;
+  color: #484848;
+  white-space: nowrap;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
+#app .container-view::-webkit-scrollbar {
+  display: none;
+}
